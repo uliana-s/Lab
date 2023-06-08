@@ -1,11 +1,11 @@
 import math
 
 class M13(Theme):
-    discipline = "Ìàòåìàòèêà"
-    topic = "ÍÑÄ äâîõ ÷èñåë"
+    discipline = "ÐœÐ°Ñ‚ÐµÐ¼Ð°Ñ‚Ð¸ÐºÐ°"
+    topic = "ÃÃ‘Ã„ Ã¤Ã¢Ã®Ãµ Ã·Ã¨Ã±Ã¥Ã«"
     def realisation(self):
-        a = int(myinput("Ââåä³òü îäíå ÷èñëî :"))
-        b = int(myinput("Ââåä³òü äðóãå ÷èñëî :"))
+        a = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã®Ã¤Ã­Ã¥ Ã·Ã¨Ã±Ã«Ã® :"))
+        b = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã¤Ã°Ã³Ã£Ã¥ Ã·Ã¨Ã±Ã«Ã® :"))
         while a * b != 0:
             if a >= b:
                 a = a % b
@@ -13,46 +13,46 @@ class M13(Theme):
                 b = b % a
         if a<b:
             a=b
-        myprint("ÍÑÄ:"+str(a))
+        myprint("ÃÃ‘Ã„:"+str(a))
 
 class M17(Theme):
-    discipline = "Ìàòåìàòèêà"
-    topic = "Ñêàëÿðíèé äîáóòîê âåêòîð³â"
+    discipline = "ÃŒÃ Ã²Ã¥Ã¬Ã Ã²Ã¨ÃªÃ "
+    topic = "Ã‘ÃªÃ Ã«Ã¿Ã°Ã­Ã¨Ã© Ã¤Ã®Ã¡Ã³Ã²Ã®Ãª Ã¢Ã¥ÃªÃ²Ã®Ã°Â³Ã¢"
     def realisation(self):
-        a = int(myinput("Ââåä³òü |a|:"))
-        b = int(myinput("Ââåä³òü |b|:"))
-        r = int(myinput("Ââåä³òü êóò:"))
+        a = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ |a|:"))
+        b = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ |b|:"))
+        r = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ³Ã²:"))
         myprint(self.topic+": "+str(a*b*math.cos(r)))
 
 class M21(Theme):
-    discipline = "Ìàòåìàòèêà"
-    topic = "Äîâæèíà â³äð³çêà"
+    discipline = "ÃŒÃ Ã²Ã¥Ã¬Ã Ã²Ã¨ÃªÃ "
+    topic = "Ã„Ã®Ã¢Ã¦Ã¨Ã­Ã  Ã¢Â³Ã¤Ã°Â³Ã§ÃªÃ "
     def realisation(self):
-        x1 = int(myinput("Ââåä³òü x1:"))
-        y1 = int(myinput("Ââåä³òü y1:"))
-        x2 = int(myinput("Ââåä³òü x2:"))
-        y2 = int(myinput("Ââåä³òü y2:"))
+        x1 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ x1:"))
+        y1 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ y1:"))
+        x2 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ x2:"))
+        y2 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ y2:"))
         myprint(self.topic+": "+str(((x1-x2)^2+(y1-y2)^2)^0.5))
 
 class M25(Theme):
-    discipline = "Ìàòåìàòèêà"
-    topic = "Ïëîùà òðàïåö³¿"
+    discipline = "ÃŒÃ Ã²Ã¥Ã¬Ã Ã²Ã¨ÃªÃ "
+    topic = "ÃÃ«Ã®Ã¹Ã  Ã²Ã°Ã Ã¯Ã¥Ã¶Â³Â¿"
     def realisation(self):
-        a = int(myinput("Ââåä³òü a:"))
-        b = int(myinput("Ââåä³òü b:"))
-        h = int(myinput("Ââåä³òü h:"))
+        a = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ a:"))
+        b = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ b:"))
+        h = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ h:"))
         myprint(self.topic+": "+str((a+b)/2*h))
 
 class M29(Theme):
-    discipline = "Ìàòåìàòèêà"
-    topic = "Öåíòð êîëà çà òðüîìà òî÷êàìè êîëà"
+    discipline = "ÃŒÃ Ã²Ã¥Ã¬Ã Ã²Ã¨ÃªÃ "
+    topic = "Ã–Ã¥Ã­Ã²Ã° ÃªÃ®Ã«Ã  Ã§Ã  Ã²Ã°Ã¼Ã®Ã¬Ã  Ã²Ã®Ã·ÃªÃ Ã¬Ã¨ ÃªÃ®Ã«Ã "
     def realisation(self):
-        x1 = int(myinput("Ââåä³òü x1:"))
-        y1 = int(myinput("Ââåä³òü y1:"))
-        x2 = int(myinput("Ââåä³òü x2:"))
-        y2 = int(myinput("Ââåä³òü y2:"))
-        x3 = int(myinput("Ââåä³òü x3:"))
-        y3 = int(myinput("Ââåä³òü y3:"))
+        x1 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ x1:"))
+        y1 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ y1:"))
+        x2 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ x2:"))
+        y2 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ y2:"))
+        x3 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ x3:"))
+        y3 = int(myinput("Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ y3:"))
         xc1=(x1+x2)/2
         yc1=(y1+y2)/2
         xc2=(x1+x3)/2
@@ -70,35 +70,35 @@ class M29(Theme):
         myprint("("+str(x)+";"+str(y)+")")
 
 class G33(Theme):
-    discipline = "Ãåîãðàô³ÿ"
-    topic = "ßêèé îêåàí íàéá³ëüøèé çà ïëîùåþ?"
+    discipline = "ÃƒÃ¥Ã®Ã£Ã°Ã Ã´Â³Ã¿"
+    topic = "ÃŸÃªÃ¨Ã© Ã®ÃªÃ¥Ã Ã­ Ã­Ã Ã©Ã¡Â³Ã«Ã¼Ã¸Ã¨Ã© Ã§Ã  Ã¯Ã«Ã®Ã¹Ã¥Ã¾?"
     def realisation(self):
-        myprint("Òèõèé îêåàí")
+        myprint("Ã’Ã¨ÃµÃ¨Ã© Ã®ÃªÃ¥Ã Ã­")
 
 class G37(Theme):
-    discipline = "Ãåîãðàô³ÿ"
-    topic = "ßêà äåðæàâà ìàº íàéá³ëüøó ê³ëüê³ñòü îçåð â ñâ³ò³?"
+    discipline = "ÃƒÃ¥Ã®Ã£Ã°Ã Ã´Â³Ã¿"
+    topic = "ÃŸÃªÃ  Ã¤Ã¥Ã°Ã¦Ã Ã¢Ã  Ã¬Ã Âº Ã­Ã Ã©Ã¡Â³Ã«Ã¼Ã¸Ã³ ÃªÂ³Ã«Ã¼ÃªÂ³Ã±Ã²Ã¼ Ã®Ã§Ã¥Ã° Ã¢ Ã±Ã¢Â³Ã²Â³?"
     def realisation(self):
-        myprint("Êàíàäà")
+        myprint("ÃŠÃ Ã­Ã Ã¤Ã ")
 
 class G41(Theme):
-    discipline = "Ãåîãðàô³ÿ"
-    topic = "Äâ³ äåðæàâè, ÿê³ ìàþòü íàéá³ëüøó ê³ëüê³ñòü âîäîñõîâèù â ñâ³ò³."
+    discipline = "ÃƒÃ¥Ã®Ã£Ã°Ã Ã´Â³Ã¿"
+    topic = "Ã„Ã¢Â³ Ã¤Ã¥Ã°Ã¦Ã Ã¢Ã¨, Ã¿ÃªÂ³ Ã¬Ã Ã¾Ã²Ã¼ Ã­Ã Ã©Ã¡Â³Ã«Ã¼Ã¸Ã³ ÃªÂ³Ã«Ã¼ÃªÂ³Ã±Ã²Ã¼ Ã¢Ã®Ã¤Ã®Ã±ÃµÃ®Ã¢Ã¨Ã¹ Ã¢ Ã±Ã¢Â³Ã²Â³."
     def realisation(self):
         myprint("")
 
 class F50(Theme):
-    discipline = "Ô³ëîëîã³ÿ"
-    topic = "ßê³ â³äì³íêè º â óêðà¿íñüê³é ìîâ³?"
+    discipline = "Ã”Â³Ã«Ã®Ã«Ã®Ã£Â³Ã¿"
+    topic = "ÃŸÃªÂ³ Ã¢Â³Ã¤Ã¬Â³Ã­ÃªÃ¨ Âº Ã¢ Ã³ÃªÃ°Ã Â¿Ã­Ã±Ã¼ÃªÂ³Ã© Ã¬Ã®Ã¢Â³?"
     def realisation(self):
-        myprint("íàçèâíèé, ðîäîâèé, äàâàëüíèé, çíàõ³äíèé, îðóäíèé, ì³ñöåâèé ³ êëè÷íèé")
+        myprint("Ã­Ã Ã§Ã¨Ã¢Ã­Ã¨Ã©, Ã°Ã®Ã¤Ã®Ã¢Ã¨Ã©, Ã¤Ã Ã¢Ã Ã«Ã¼Ã­Ã¨Ã©, Ã§Ã­Ã ÃµÂ³Ã¤Ã­Ã¨Ã©, Ã®Ã°Ã³Ã¤Ã­Ã¨Ã©, Ã¬Â³Ã±Ã¶Ã¥Ã¢Ã¨Ã© Â³ ÃªÃ«Ã¨Ã·Ã­Ã¨Ã©")
 
 class T54(Theme):
-    discipline = "Ðîáîòà ç òåêñòîì"
-    topic = "Äëÿ êîæíîãî ç³ ñë³â òåêñòó ï³äðàõóâàòè, ñê³ëüêè ðàç³â âîíî çóñòð³÷àºòüñÿ ó òåêñò³"
+    discipline = "ÃÃ®Ã¡Ã®Ã²Ã  Ã§ Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬"
+    topic = "Ã„Ã«Ã¿ ÃªÃ®Ã¦Ã­Ã®Ã£Ã® Ã§Â³ Ã±Ã«Â³Ã¢ Ã²Ã¥ÃªÃ±Ã²Ã³ Ã¯Â³Ã¤Ã°Ã ÃµÃ³Ã¢Ã Ã²Ã¨, Ã±ÃªÂ³Ã«Ã¼ÃªÃ¨ Ã°Ã Ã§Â³Ã¢ Ã¢Ã®Ã­Ã® Ã§Ã³Ã±Ã²Ã°Â³Ã·Ã ÂºÃ²Ã¼Ã±Ã¿ Ã³ Ã²Ã¥ÃªÃ±Ã²Â³"
     def realisation(self):
-        f1 = myinput("Âêàæ³òü íàçâó âõ³äíîãî ôàéëó")
-        f2 = myinput("Âêàæ³òü íàçâó âèõ³äíîãî ôàéëó")
+        f1 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
+        f2 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢Ã¨ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
         file1 = open(f1, "r")
         file2 = open(f2, "w")
         s1 = file1.read()
@@ -111,12 +111,12 @@ class T54(Theme):
             file2.write(str(i) + " " + str(list1.count(i))+"\n")
 
 class T58(Theme):
-    discipline = "Ðîáîòà ç òåêñòîì"
-    topic = "Çíàéòè âñ³ ñëîâà, ùî ì³ñòÿòü ïåâíó ë³òåðó"
+    discipline = "ÃÃ®Ã¡Ã®Ã²Ã  Ã§ Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬"
+    topic = "Ã‡Ã­Ã Ã©Ã²Ã¨ Ã¢Ã±Â³ Ã±Ã«Ã®Ã¢Ã , Ã¹Ã® Ã¬Â³Ã±Ã²Ã¿Ã²Ã¼ Ã¯Ã¥Ã¢Ã­Ã³ Ã«Â³Ã²Ã¥Ã°Ã³"
     def realisation(self):
-        s = myinput("Âêàæ³òü ë³òåðó")
-        f1 = myinput("Âêàæ³òü íàçâó âõ³äíîãî ôàéëó")
-        f2 = myinput("Âêàæ³òü íàçâó âèõ³äíîãî ôàéëó")
+        s = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã«Â³Ã²Ã¥Ã°Ã³")
+        f1 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
+        f2 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢Ã¨ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
         file1 = open(f1, "r")
         file2 = open(f2, "w")
         s1 = file1.read()
@@ -130,11 +130,11 @@ class T58(Theme):
                 file2.write(str(i)+"\n")
 
 class T62(Theme):
-    discipline = "Ðîáîòà ç òåêñòîì"
-    topic = "Çíàéòè ê³ëüê³ñòü ñë³â ó òåêñò³"
+    discipline = "ÃÃ®Ã¡Ã®Ã²Ã  Ã§ Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬"
+    topic = "Ã‡Ã­Ã Ã©Ã²Ã¨ ÃªÂ³Ã«Ã¼ÃªÂ³Ã±Ã²Ã¼ Ã±Ã«Â³Ã¢ Ã³ Ã²Ã¥ÃªÃ±Ã²Â³"
     def realisation(self):
-        f1 = myinput("Âêàæ³òü íàçâó âõ³äíîãî ôàéëó")
-        f2 = myinput("Âêàæ³òü íàçâó âèõ³äíîãî ôàéëó")
+        f1 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
+        f2 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢Ã¨ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
         file1 = open(f1, "r")
         file2 = open(f2, "w")
         s1 = file1.read()
@@ -142,11 +142,11 @@ class T62(Theme):
         file2.write(str(len(list1))+"\n")
 
 class T66(Theme):
-    discipline = "Ðîáîòà ç òåêñòîì"
-    topic = "Ïåðåâåñòè òåêñò â âåðõí³é ðåã³ñòð"
+    discipline = "ÃÃ®Ã¡Ã®Ã²Ã  Ã§ Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬"
+    topic = "ÃÃ¥Ã°Ã¥Ã¢Ã¥Ã±Ã²Ã¨ Ã²Ã¥ÃªÃ±Ã² Ã¢ Ã¢Ã¥Ã°ÃµÃ­Â³Ã© Ã°Ã¥Ã£Â³Ã±Ã²Ã°"
     def realisation(self):
-        f1 = myinput("Âêàæ³òü íàçâó âõ³äíîãî ôàéëó")
-        f2 = myinput("Âêàæ³òü íàçâó âèõ³äíîãî ôàéëó")
+        f1 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
+        f2 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢Ã¨ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
         file1 = open(f1, "r")
         file2 = open(f2, "w")
         s1 = file1.read()
@@ -154,18 +154,18 @@ class T66(Theme):
         file2.write(s2+"\n")
 
 class T70(Theme):
-    discipline = "Ðîáîòà ç òåêñòîì"
-    topic = "Çíàéòè íàéäîâø³ ñëîâà, ÿê³ ïî÷èíàþòüñÿ ç ãîëîñíî¿ ë³òåðè"
+    discipline = "ÃÃ®Ã¡Ã®Ã²Ã  Ã§ Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬"
+    topic = "Ã‡Ã­Ã Ã©Ã²Ã¨ Ã­Ã Ã©Ã¤Ã®Ã¢Ã¸Â³ Ã±Ã«Ã®Ã¢Ã , Ã¿ÃªÂ³ Ã¯Ã®Ã·Ã¨Ã­Ã Ã¾Ã²Ã¼Ã±Ã¿ Ã§ Ã£Ã®Ã«Ã®Ã±Ã­Ã®Â¿ Ã«Â³Ã²Ã¥Ã°Ã¨"
     def realisation(self):
-        f1 = myinput("Âêàæ³òü íàçâó âõ³äíîãî ôàéëó")
-        f2 = myinput("Âêàæ³òü íàçâó âèõ³äíîãî ôàéëó")
+        f1 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
+        f2 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢Ã¨ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
         file1 = open(f1, "r")
         file2 = open(f2, "w")
         s1 = file1.read()
         list1 = s1.split()
         list2 = []
         for i in list1:
-            if (i not in list2) and (i[0] in "ÀàÓóÅå²³ÎîªºßÿÈèÞþ¯¿"):
+            if (i not in list2) and (i[0] in "Ã€Ã Ã“Ã³Ã…Ã¥Â²Â³ÃŽÃ®ÂªÂºÃŸÃ¿ÃˆÃ¨ÃžÃ¾Â¯Â¿"):
                 list2.append(i)
         l = 0
         for i in list2:
@@ -176,11 +176,11 @@ class T70(Theme):
                 file2.write(str(i)+"\n")
 
 class T74(Theme):
-    discipline = "Ðîáîòà ç òåêñòîì"
-    topic = "Çíàéòè íàéäîâø³ ñëîâà, ÿê³ íå ì³ñòÿòü ãîëîñíèõ ë³òåð"
+    discipline = "ÃÃ®Ã¡Ã®Ã²Ã  Ã§ Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬"
+    topic = "Ã‡Ã­Ã Ã©Ã²Ã¨ Ã­Ã Ã©Ã¤Ã®Ã¢Ã¸Â³ Ã±Ã«Ã®Ã¢Ã , Ã¿ÃªÂ³ Ã­Ã¥ Ã¬Â³Ã±Ã²Ã¿Ã²Ã¼ Ã£Ã®Ã«Ã®Ã±Ã­Ã¨Ãµ Ã«Â³Ã²Ã¥Ã°"
     def realisation(self):
-        f1 = myinput("Âêàæ³òü íàçâó âõ³äíîãî ôàéëó")
-        f2 = myinput("Âêàæ³òü íàçâó âèõ³äíîãî ôàéëó")
+        f1 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
+        f2 = myinput("Ã‚ÃªÃ Ã¦Â³Ã²Ã¼ Ã­Ã Ã§Ã¢Ã³ Ã¢Ã¨ÃµÂ³Ã¤Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã³")
         file1 = open(f1, "r")
         file2 = open(f2, "w")
         s1 = file1.read()
@@ -189,7 +189,7 @@ class T74(Theme):
         for i in list1:
             if i not in list2:
                 for j in i:
-                    if j not in "ÀàÓóÅå²³ÎîªºßÿÈèÞþ¯¿":
+                    if j not in "Ã€Ã Ã“Ã³Ã…Ã¥Â²Â³ÃŽÃ®ÂªÂºÃŸÃ¿ÃˆÃ¨ÃžÃ¾Â¯Â¿":
                         list2.append(i)
         l = 0
         for i in list2:
@@ -200,75 +200,75 @@ class T74(Theme):
                 file2.write(str(l) + "\n")
 
 class Z78(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ñê³ëüêè äí³â äî Íîâîãî Ðîêó?"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "Ã‘ÃªÂ³Ã«Ã¼ÃªÃ¨ Ã¤Ã­Â³Ã¢ Ã¤Ã® ÃÃ®Ã¢Ã®Ã£Ã® ÃÃ®ÃªÃ³?"
     def realisation(self):
         start_date = date.today()
         end_date = date(2024,1,1)
         myprint(str((end_date - start_date).days))
 
 class Z82(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ïîãðàòè ó â³äãàäàé ÷èñëî ì³æ 1 òà 10."
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "ÃÃ®Ã£Ã°Ã Ã²Ã¨ Ã³ Ã¢Â³Ã¤Ã£Ã Ã¤Ã Ã© Ã·Ã¨Ã±Ã«Ã® Ã¬Â³Ã¦ 1 Ã²Ã  10."
     def realisation(self):
         a = randint(1, 10)
-        b = myinput("ß çàãàäàâ ÷èñëî ì³æ 1 òà 10. Â³äãàäàé éîãî:")
+        b = myinput("ÃŸ Ã§Ã Ã£Ã Ã¤Ã Ã¢ Ã·Ã¨Ã±Ã«Ã® Ã¬Â³Ã¦ 1 Ã²Ã  10. Ã‚Â³Ã¤Ã£Ã Ã¤Ã Ã© Ã©Ã®Ã£Ã®:")
         if a == b:
-            myprint("Ìîëîäåöü")
+            myprint("ÃŒÃ®Ã«Ã®Ã¤Ã¥Ã¶Ã¼")
         else:
-            myprint("Íó í³÷îãî")
+            myprint("ÃÃ³ Ã­Â³Ã·Ã®Ã£Ã®")
 
 class Z91(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ïåðåâ³ðêà òàáëè÷êè ìíîæåííÿ"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "ÃÃ¥Ã°Ã¥Ã¢Â³Ã°ÃªÃ  Ã²Ã Ã¡Ã«Ã¨Ã·ÃªÃ¨ Ã¬Ã­Ã®Ã¦Ã¥Ã­Ã­Ã¿"
     def realisation(self):
         a = randint(1, 10)
         b = randint(1, 10)
-        ñ = myinput("Ñê³ëüêè áóäå "+str(a)+"*"+str(b)+":")
+        Ã± = myinput("Ã‘ÃªÂ³Ã«Ã¼ÃªÃ¨ Ã¡Ã³Ã¤Ã¥ "+str(a)+"*"+str(b)+":")
         if c == a*b:
-            myprint("Ìîëîäåöü")
+            myprint("ÃŒÃ®Ã«Ã®Ã¤Ã¥Ã¶Ã¼")
         else:
-            myprint("Íó í³÷îãî")
+            myprint("ÃÃ³ Ã­Â³Ã·Ã®Ã£Ã®")
 
 class Z95(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ïåðåâ³ðêà äîäàâàííÿ"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "ÃÃ¥Ã°Ã¥Ã¢Â³Ã°ÃªÃ  Ã¤Ã®Ã¤Ã Ã¢Ã Ã­Ã­Ã¿"
     def realisation(self):
         a = randint(1, 10)
         b = randint(1, 10)
-        ñ = myinput("Ñê³ëüêè áóäå "+str(a)+"+"+str(b)+":")
+        Ã± = myinput("Ã‘ÃªÂ³Ã«Ã¼ÃªÃ¨ Ã¡Ã³Ã¤Ã¥ "+str(a)+"+"+str(b)+":")
         if c == a+b:
-            myprint("Ìîëîäåöü")
+            myprint("ÃŒÃ®Ã«Ã®Ã¤Ã¥Ã¶Ã¼")
         else:
-            myprint("Íó í³÷îãî")
+            myprint("ÃÃ³ Ã­Â³Ã·Ã®Ã£Ã®")
 
 class Z99(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ïåðåâ³ðêà â³äí³ìàííÿ"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "ÃÃ¥Ã°Ã¥Ã¢Â³Ã°ÃªÃ  Ã¢Â³Ã¤Ã­Â³Ã¬Ã Ã­Ã­Ã¿"
     def realisation(self):
         a = randint(1, 10)
         b = randint(1, 10)
-        ñ = myinput("Ñê³ëüêè áóäå "+str(a)+"-"+str(b)+":")
+        Ã± = myinput("Ã‘ÃªÂ³Ã«Ã¼ÃªÃ¨ Ã¡Ã³Ã¤Ã¥ "+str(a)+"-"+str(b)+":")
         if c == a-b:
-            myprint("Ìîëîäåöü")
+            myprint("ÃŒÃ®Ã«Ã®Ã¤Ã¥Ã¶Ã¼")
         else:
-            myprint("Íó í³÷îãî")
+            myprint("ÃÃ³ Ã­Â³Ã·Ã®Ã£Ã®")
 
 class Z103(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ïîñì³øêà"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "ÃÃ®Ã±Ã¬Â³Ã¸ÃªÃ "
     def realisation(self):
         myprint(")")
 
 class Z107(Theme):
-    discipline = "Çàãàëüí³"
-    topic = """Õòî º âèêîíàâöåì êîìïîçèö³¿ "Call me"?"""
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = """Ã•Ã²Ã® Âº Ã¢Ã¨ÃªÃ®Ã­Ã Ã¢Ã¶Ã¥Ã¬ ÃªÃ®Ã¬Ã¯Ã®Ã§Ã¨Ã¶Â³Â¿ "Call me"?"""
     def realisation(self):
         myprint("Blondie")
 
 class Z111(Theme):
-    discipline = "Çàãàëüí³"
-    topic = """Ïðèñï³â "Call me" """
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = """ÃÃ°Ã¨Ã±Ã¯Â³Ã¢ "Call me" """
     def realisation(self):
         myprint("""Call me (call me) on the line
                 Call me, call me any, anytime
@@ -277,14 +277,14 @@ class Z111(Theme):
                 Call me""")
 
 class Z115(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "Ñê³ëüêè äí³â ó âèñîêîñíîìó ðîö³?"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "Ã‘ÃªÂ³Ã«Ã¼ÃªÃ¨ Ã¤Ã­Â³Ã¢ Ã³ Ã¢Ã¨Ã±Ã®ÃªÃ®Ã±Ã­Ã®Ã¬Ã³ Ã°Ã®Ã¶Â³?"
     def realisation(self):
         myprint("366")
 
 class Z119(Theme):
-    discipline = "Çàãàëüí³"
-    topic = "ßê³ º çíàêè çîä³àêó?"
+    discipline = "Ã‡Ã Ã£Ã Ã«Ã¼Ã­Â³"
+    topic = "ÃŸÃªÂ³ Âº Ã§Ã­Ã ÃªÃ¨ Ã§Ã®Ã¤Â³Ã ÃªÃ³?"
     def realisation(self):
-        myprint("Îâåí, Òåëåöü, Áëèçíþêè, Ðàê, Ëåâ, Ä³âà, Òåðåçè, Ñêîðï³îí, Ñòð³ëåöü, Êîçåð³ã,Âîäîë³é, Ðèáè")
+        myprint("ÃŽÃ¢Ã¥Ã­, Ã’Ã¥Ã«Ã¥Ã¶Ã¼, ÃÃ«Ã¨Ã§Ã­Ã¾ÃªÃ¨, ÃÃ Ãª, Ã‹Ã¥Ã¢, Ã„Â³Ã¢Ã , Ã’Ã¥Ã°Ã¥Ã§Ã¨, Ã‘ÃªÃ®Ã°Ã¯Â³Ã®Ã­, Ã‘Ã²Ã°Â³Ã«Ã¥Ã¶Ã¼, ÃŠÃ®Ã§Ã¥Ã°Â³Ã£,Ã‚Ã®Ã¤Ã®Ã«Â³Ã©, ÃÃ¨Ã¡Ã¨")
 
